@@ -1,10 +1,13 @@
 <?php
+
 declare(strict_types=1);
 
-function calculateAverage(array $grades): float {
+function calculateAverage(array $grades): float
+{
     return array_sum($grades) / count($grades);
 }
-function hasGrades(array $grades): bool {
+function hasGrades(array $grades): bool
+{
     return count($grades) > 0;
 }
 

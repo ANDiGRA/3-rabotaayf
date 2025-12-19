@@ -1,9 +1,11 @@
 <?php
+
 declare(strict_types=1);
 
-function thirdMax(array $nums): int {
-    $uniqueNums = array_unique($nums); 
-    rsort($uniqueNums); 
+function thirdMax(array $nums): int
+{
+    $uniqueNums = array_unique($nums);
+    rsort($uniqueNums);
 
     if (count($uniqueNums) < 3) {
         return max($uniqueNums);
